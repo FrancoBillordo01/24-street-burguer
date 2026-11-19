@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Demo conceptual de un menú digital inspirado en 24th Street Burger."
+  >
+
+  <title>24th Street Burger | Menú demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap"
+    rel="stylesheet"
+>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <p class="aviso-demo">
+    Demo conceptual · Proyecto no oficial
+  </p>
+
+  <header class="header">
+    <a class="marca" href="./" aria-label="24th Street Burger — Inicio">
+      24th <span>Street Burger</span>
+    </a>
+
+  </header>
+
+  <main>
+    <section class="portada" aria-labelledby="titulo-portada">
+  <div class="portada-contenedor">
+    <div class="portada-texto">
+      <h1 id="titulo-portada">
+        Only smash.<br>
+        Mucho barrio.
+      </h1>
+
+      <p class="portada-descripcion">
+        Elegí tu favorita y armá tu pedido.
+      </p>
+    </div>
+
+    <img
+      class="portada-burger"
+      src="assets/img/burger-portada.png"
+      alt="Doble smash burger con cheddar y pepinillos sobre papel cuadriculado"
+      fetchpriority="high"
+      width="1536"
+      height="1024"
+    >
+
+    <a class="boton-principal portada-boton" href="#menu">
+      Ver menú ↗
+    </a>
+  </div>
+</section>
+
+    <section class="menu" id="menu" aria-labelledby="titulo-menu">
+      <div class="menu-encabezado">
+        <div>
+          <p class="etiqueta-seccion">ELEGÍ TU COMBO IDEAL</p>
+          <h2 id="titulo-menu">Nuestro menú</h2>
+        </div>
+
+        <span class="sello">SMASH<br>LOVERS</span>
+      </div>
+
+      <p class="menu-aclaracion">
+        Productos, ingredientes y precios ficticios para esta demo.
+      </p>
+
+      <div class="categorias" role="group" aria-label="Filtrar productos">
+        <button
+          class="categoria"
+          type="button"
+          data-categoria="todos"
+          aria-pressed="true"
+        >
+          Todo el menú
+        </button>
+
+        <button
+          class="categoria"
+          type="button"
+          data-categoria="hamburguesas"
+          aria-pressed="false"
+        >
+          Hamburguesas
+        </button>
+
+        <button
+          class="categoria"
+          type="button"
+          data-categoria="acompanamientos"
+          aria-pressed="false"
+        >
+          Acompañamientos
+        </button>
+
+        <button
+          class="categoria"
+          type="button"
+          data-categoria="bebidas"
+          aria-pressed="false"
+        >
+          Bebidas
+        </button>
+      </div>
+
+      <div class="productos-grid" id="productos"></div>
+
+      <noscript>
+        <p>Activá JavaScript para ver los productos y probar el carrito.</p>
+      </noscript>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="marca marca-footer" href="./">
+      24th <span>Street Burger</span>
+    </a>
+
+    <p>Proyecto de práctica inspirado en 24th Street Burger.</p>
+    <p>Demo no oficial · No recibe pedidos reales.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
